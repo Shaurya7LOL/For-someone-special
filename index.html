@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d1c">
+  <meta name="description" content="A starry little Children’s Day surprise for Misthi, from her favourite best friend.">
+  <title>Misthi Meri One And Only Bacchi ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="song-library.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="page-wash" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="wordmark" href="#home" aria-label="Back to the top"><span class="wordmark-flower">✿</span> a little something for you</a>
+    <span class="date-pill"><span aria-hidden="true">✦</span> Children’s Day · 14 November</span>
+  </header>
+
+  <main id="home">
+    <section class="hero section-wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> only the universe’s most favourite baccha gets a page</p>
+        <h1 id="hero-title"><span class="hero-title-small">Misthi Meri</span><span class="hero-title-small">One And Only</span><span class="bacchi-focus">Bacchi</span></h1>
+        <p class="hero-subtitle">Happy Children’s Day to the cutest, sweetest, funniest, most ridiculously lovable best friend in the whole galaxy. Haan, tum hi ho. Obviously. ✨</p>
+        <a class="button button-coral" href="#your-day">Your very important day <span aria-hidden="true">↓</span></a>
+        <span class="tiny-note">(compliments ahead. kaafi saare. you’ve been warned.)</span>
+      </div>
+
+      <div class="hero-art" aria-label="A glowing moon and a little glass card for Misthi">
+        <div class="moon-halo" aria-hidden="true"></div>
+        <button class="moon-orb" id="moon-button" type="button" aria-label="Tap the crescent moon for a compliment" aria-pressed="false">
+          <svg class="crescent-svg" viewBox="0 0 220 220" aria-hidden="true">
+            <defs><linearGradient id="moonlight" x1=".1" y1=".2" x2=".9" y2=".85"><stop offset="0" stop-color="#fff7df"/><stop offset=".52" stop-color="#eee0c5"/><stop offset="1" stop-color="#c8c9ec"/></linearGradient></defs>
+            <path class="crescent-shape" d="M154 16 A108 108 0 1 0 192 183 C151 173 119 142 106 105 C94 68 114 32 154 16Z"/>
+            <circle cx="61" cy="70" r="7"/><circle cx="42" cy="119" r="4"/><circle cx="79" cy="157" r="5"/>
+            <path class="crescent-smile" d="M50 101 Q64 115 79 101"/>
+          </svg>
+        </button>
+        <span class="art-sparkle sparkle-one" aria-hidden="true">✦</span>
+        <span class="art-sparkle sparkle-two" aria-hidden="true">✧</span>
+        <span class="art-heart" aria-hidden="true">♡</span>
+        <div class="mini-card"><span class="card-stamp">FOR MY STAR</span><strong>Misthi</strong><span class="card-doodle">♡</span></div>
+        <span class="art-caption">tap the moon, baccha ✨</span>
+      </div>
+      <p class="moon-message" id="moon-message" role="status" aria-live="polite"></p>
+      <a href="#your-day" class="scroll-cue" aria-label="Scroll down">↓</a>
+    </section>
+
+    <section class="day-section" id="your-day" aria-labelledby="day-title">
+      <div class="section-wrap day-inner">
+        <div class="section-heading">
+          <p class="eyebrow"><span class="eyebrow-line"></span> official tareef archive</p>
+          <h2 id="day-title">12 reasons you’re<br><span class="script-word">my favourite Bacchi.</span></h2>
+          <p class="section-intro">Growing up ka pressure baad mein. Aaj bas tum, tumhari cute si smile, thodi masti, and unlimited pyaar. Deal? ♡</p>
+        </div>
+        <div class="joy-list">
+          <article class="joy-card joy-peach"><span class="joy-icon" aria-hidden="true">☁</span><span class="joy-number">01</span><h3>Smile thoda extra</h3><p>Tumhari smile literally meri favourite notification hai. Dil khush kar deti ho, bas aise hi.</p></article>
+          <article class="joy-card joy-lilac"><span class="joy-icon" aria-hidden="true">♡</span><span class="joy-number">02</span><h3>Cutie rehna compulsory</h3><p>Itni pyaari kaise ho? Ye talent hai ya universe ka personal favour?</p></article>
+          <article class="joy-card joy-mint"><span class="joy-icon" aria-hidden="true">✿</span><span class="joy-number">03</span><h3>Khud ko bhi pyaar do</h3><p>You deserve all the softness and happiness you give everyone else, especially yourself.</p></article>
+          <article class="joy-card joy-lilac"><span class="joy-icon" aria-hidden="true">✧</span><span class="joy-number">04</span><h3>Certified dil ki rani</h3><p>Tumhara kind heart itna special hai, uske liye universe ko extra stars banane pade.</p></article>
+          <article class="joy-card joy-mint"><span class="joy-icon" aria-hidden="true">☾</span><span class="joy-number">05</span><h3>Best-friend jackpot</h3><p>Honestly, tum meri life ka best plot twist ho. Itni pyaari bestie kisko milti hai?</p></article>
+          <article class="joy-card joy-peach"><span class="joy-icon" aria-hidden="true">♡</span><span class="joy-number">06</span><h3>One of one, Misthi</h3><p>Beautiful inside, cute outside, aur personality full premium edition. No upgrades needed.</p></article>
+          <article class="joy-card joy-peach"><span class="joy-icon" aria-hidden="true">✦</span><span class="joy-number">07</span><h3>Hasi ka headliner</h3><p>Tumhari laugh sunke mood ka software update ho jaata hai. Instant better version.</p></article>
+          <article class="joy-card joy-lilac"><span class="joy-icon" aria-hidden="true">♡</span><span class="joy-number">08</span><h3>Soft heart, strong star</h3><p>Itni caring ho tum, but tum khud bhi utni hi care deserve karti ho, samjhi?</p></article>
+          <article class="joy-card joy-mint"><span class="joy-icon" aria-hidden="true">✧</span><span class="joy-number">09</span><h3>Vibe department ki boss</h3><p>Room mein tum ho toh energy automatically cute, cozy aur 10/10 ho jaati hai.</p></article>
+          <article class="joy-card joy-lilac"><span class="joy-icon" aria-hidden="true">☾</span><span class="joy-number">10</span><h3>Moon-approved cutie</h3><p>Chaand ne bhi bola: Misthi ki glow alag hi level pe hai. Main toh bas agree karta hoon.</p></article>
+          <article class="joy-card joy-mint"><span class="joy-icon" aria-hidden="true">✿</span><span class="joy-number">11</span><h3>Kindness ki CEO</h3><p>Tumhara dil itna pyaara hai, kindness tumse masterclass lene aati hogi.</p></article>
+          <article class="joy-card joy-peach"><span class="joy-icon" aria-hidden="true">✦</span><span class="joy-number">12</span><h3>Favourite person, no contest</h3><p>Best friend ke roop mein tum full five-star review ho. Would choose again. Always.</p></article>
+        </div>
+        <div class="tiny-stars" aria-hidden="true">✳ &nbsp; · &nbsp; ✧ &nbsp; · &nbsp; ✳</div>
+      </div>
+    </section>
+
+    <section class="constellation-section section-wrap" aria-labelledby="constellation-title">
+      <div class="constellation-card">
+        <p class="eyebrow">a very scientific star study</p>
+        <h2 id="constellation-title">Tap a star,<br><span class="script-word">get a tareef.</span></h2>
+        <p class="section-intro">Astronomers confirmed it: every star in this constellation is just here to remind you that you’re amazing. ✨</p>
+        <div class="star-picks" role="group" aria-label="Choose a star to reveal a compliment">
+          <button class="star-pick" type="button" data-star="0" aria-label="Reveal a compliment">✦</button>
+          <button class="star-pick" type="button" data-star="1" aria-label="Reveal another compliment">✧</button>
+          <button class="star-pick" type="button" data-star="2" aria-label="Reveal one more compliment">✦</button>
+          <button class="star-pick" type="button" data-star="3" aria-label="Reveal a secret compliment">✧</button>
+          <span class="constellation-line line-one" aria-hidden="true"></span><span class="constellation-line line-two" aria-hidden="true"></span><span class="constellation-line line-three" aria-hidden="true"></span>
+        </div>
+        <p class="compliment-message" id="compliment-message" role="status" aria-live="polite">Koi bhi star tap karo, Baccha. Tareef toh ready hi baithi hai. ♡</p>
+        <button class="button button-dark wish-button" id="wish-button" type="button">Make a wish <span aria-hidden="true">↗</span></button>
+      </div>
+    </section>
+
+    <section class="music-section section-wrap" aria-labelledby="music-title">
+      <div class="music-card">
+        <p class="eyebrow">soundtrack for my favourite person</p>
+        <h2 id="music-title">Misthi’s little<br><span class="script-word">music corner.</span></h2>
+        <p class="section-intro">Playlist mein se uska favourite choose karo. Songs add karne ke liye <code>song-library.js</code> edit karna. ♫</p>
+        <audio class="visually-hidden" id="music-player" preload="metadata" aria-label="Misthi’s favorite song">
+        </audio>
+        <div class="song-player" role="group" aria-label="Audio player">
+          <button class="player-play" id="music-toggle" type="button" aria-label="Play song" title="Play">
+            <svg class="play-symbol" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.8c0-.8.9-1.3 1.6-.9l9 5.2a1 1 0 0 1 0 1.8l-9 5.2c-.7.4-1.6-.1-1.6-.9V5.8Z"/></svg>
+            <svg class="pause-symbol" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>
+          </button>
+          <span class="player-time" id="music-current">0:00</span>
+          <input class="music-seek" id="music-seek" type="range" min="0" max="100" step="0.1" value="0" aria-label="Song timeline">
+          <span class="player-time" id="music-duration">0:00</span>
+          <button class="player-volume-button" id="music-mute" type="button" aria-label="Mute" title="Mute">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Z"/><path class="volume-wave" d="M16 9a5 5 0 0 1 0 6m2-9a9 9 0 0 1 0 12"/></svg>
+          </button>
+          <input class="music-volume" id="music-volume" type="range" min="0" max="1" step="0.01" value="0.8" aria-label="Volume">
+        </div>
+        <button class="button button-dark" id="choose-song" type="button" aria-expanded="false" aria-controls="song-menu">Choose a song <span aria-hidden="true">♫</span></button>
+        <div class="song-menu" id="song-menu" role="group" aria-label="Song playlist" hidden></div>
+        <p class="song-status" id="song-status" role="status" aria-live="polite">No song selected yet. Audio stays paused until you press play. ♡</p>
+      </div>
+    </section>
+
+    <section class="letter-section section-wrap" aria-labelledby="letter-title">
+      <div class="letter-side-note" aria-hidden="true">open when<br>you need a<br>little smile <span>↘</span></div>
+      <div class="letter-card">
+        <span class="letter-tape" aria-hidden="true"></span>
+        <div class="letter-decoration" aria-hidden="true">✿</div>
+        <p class="eyebrow">from your best friend, with embarrassing amounts of pyaar</p>
+        <h2 id="letter-title">Suno, Misthi <span aria-hidden="true">♡</span></h2>
+        <div class="letter-body" id="letter-body" hidden>
+          <p>Happy Children’s Day meri sabse pyaari Baccha! 💗</p>
+          <p>Bas ek chhota sa reminder: tum itni special ho na, ki tumhare liye alag se ek poora universe bana dena bhi thoda kam lagta hai. Tumhari smile five-star, tumhara dil pure gold, aur tumhari cuteness? Bilkul unfair advantage. ✨</p>
+          <p>You’re my best friend and honestly one of my favourite humans ever. Tumse baat karke normal sa din bhi thoda zyada fun, thoda zyada warm, aur bohot zyada better lagta hai. Tumhari kindness, tumhari silly side, tumhara bas tum hona—sab kuch top-tier hai. 11/10. Actually, rating system hi kharab hai, tum usse bhi upar ho.</p>
+          <p>Aaj ke din bas ye yaad rakhna: tumhe hamesha haste rehna zaroori nahi, but tumhe hamesha pyaar milna chahiye. And whenever you forget how wonderful you are, your best friend is fully prepared to give a TED Talk listing 900 reasons. 😌</p>
+          <p>Keep being soft, funny, brilliant, adorable, and unapologetically you, Baccha. Tum meri favourite ho—universe ne poll karaya tha. Results unanimous aaye. 🪐</p>
+          <p class="letter-signoff">Bohot saara pyaar (aur thodi si overacting),<br><span>tumhara best friend ✿</span></p>
+        </div>
+        <button class="button button-dark" id="open-letter" type="button" aria-expanded="false" aria-controls="letter-body">Open your little letter <span aria-hidden="true">↗</span></button>
+      </div>
+    </section>
+
+    <section class="final-section" aria-labelledby="final-title">
+      <div class="final-inner section-wrap">
+        <div class="floating-heart heart-a" aria-hidden="true">♥</div><div class="floating-heart heart-b" aria-hidden="true">♡</div><div class="floating-heart heart-c" aria-hidden="true">✦</div>
+        <p class="eyebrow">one last thing, baccha</p>
+        <h2 id="final-title">Compliments ka<br><span class="script-word">infinite refill.</span></h2>
+        <p>Button dabao. Best friend ki tareef ki supply kabhi khatam nahi hoti. Bilkul official hai. 😌</p>
+        <button class="button button-coral joy-button" id="joy-button" type="button">Ek aur tareef please <span aria-hidden="true">✦</span></button>
+        <p class="joy-message" id="joy-message" role="status" aria-live="polite">Misthi, tum literally walking, talking, adorable starlight ho. ♡</p>
+        <div class="final-signoff">Happy Children’s Day, <span>Misthi!</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>made for Misthi, with an embarrassing amount of love</span><span>✿ &nbsp; tumhari number-one fan, always &nbsp; ✿</span></footer>
+</body>
+</html>
