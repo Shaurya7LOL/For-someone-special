@@ -1,0 +1,1 @@
+Put her song files in this folder, then add each one to `song-library.js` as `{ title: 'Song title', src: 'music/file-name.mp3' }`. The “Choose a song” button shows that playlist in the page; it does not open a file picker.
